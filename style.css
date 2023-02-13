@@ -49,3 +49,14 @@ th {
 .status-error {
   color: red;
 }
+.incident-loading {
+  color: gray;
+}
+
+.incident-resolved {
+  color: green;
+}
+
+.incident-ongoing {
+  color: red;
+}
