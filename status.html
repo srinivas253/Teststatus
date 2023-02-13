@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Status Page</title>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+#system-status {
+  background-color: #f2f2f2;
+  padding: 1em;
+  text-align: center;
+}
+
+#status-text {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.status-ok {
+  color: green;
+}
+
+.status-warning {
+  color: orange;
+}
+
+.status-error {
+  color: red;
+}
+
+  </head>
+  <body>
+    <header>
+      <h1>Status Page</h1>
+    </header>
+    <main>
+      <section id="system-status">
+        <h2>System Status</h2>
+        <div id="status-text">Loading...</div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
