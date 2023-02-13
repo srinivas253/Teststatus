@@ -21,27 +21,32 @@
           </thead>
           <tbody id="status-table">
             <tr>
-              <td>Service 1</td>
+              <td>UserSite</td>
               <td class="status-ok">Operational</td>
             </tr>
             <tr>
-              <td>Service 2</td>
+              <td>DAST</td>
               <td class="status-error">Outage</td>
             </tr>
             <tr>
-              <td>Service 3</td>
+              <td>SAST</td>
               <td class="status-warning">Maintenance</td>
+            </tr>
+            <tr>
+              <td>PSS</td>
+              <td class="status-ok">Operational</td>
             </tr>
           </tbody>
         </table>
       </section>
       <section id="incidents">
-        <h2>Incidents</h2>
+        <h2>Incidents History</h2>
         <table>
           <thead>
             <tr>
               <th>Description</th>
               <th>Date</th>
+              <th>Service</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -49,17 +54,20 @@
             <tr>
               <td>Incident 1</td>
               <td>Feb9,2023</td>
+              <td>PSS</th>
               <td class="incident-resolved">Resolved</td>
             </tr>
             <tr>
               <td>Incident 2</td>
               <td>Feb8,2023</td>
+              <td>UserSite</td>
               <td class="incident-ongoing">In Progress</td>
             </tr>
             <tr>
               <td>Incident 3</td>
-              <td>Loading...</td>
-              <td class="incident-loading">Loading...</td>
+              <td>Feb7,2023</td>
+              <td>SAST</td>
+              <td class="incident-ongoing">Identified</td>
             </tr>
           </tbody>
         </table>
