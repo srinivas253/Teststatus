@@ -3,45 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Status Page</title>
-    <style>
-    body {
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
-}
-
-h1 {
-  margin: 0;
-}
-
-#system-status {
-  background-color: #f2f2f2;
-  padding: 1em;
-  text-align: center;
-}
-
-#status-text {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.status-ok {
-  color: green;
-}
-
-.status-warning {
-  color: orange;
-}
-
-.status-error {
-  color: red;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -50,7 +12,28 @@ h1 {
     <main>
       <section id="system-status">
         <h2>System Status</h2>
-        <div id="status-text">Loading...</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Service Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="status-table">
+            <tr>
+              <td>Service 1</td>
+              <td class="status-loading">Loading...</td>
+            </tr>
+            <tr>
+              <td>Service 2</td>
+              <td class="status-loading">Loading...</td>
+            </tr>
+            <tr>
+              <td>Service 3</td>
+              <td class="status-loading">Loading...</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
     <script src="script.js"></script>
