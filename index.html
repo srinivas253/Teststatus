@@ -94,9 +94,14 @@
 <script>
 const subscribeButton = document.getElementById("subscribe-button");
   const emailBox = document.getElementById("email-box");
+  const submitEmail = document.getElementById("submit-email");
 
   subscribeButton.addEventListener("click", function() {
     emailBox.style.display = "block";
+  });
+
+  submitEmail.addEventListener("click", function() {
+    emailBox.style.display = "none";
   });
 </script>
   </body>
