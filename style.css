@@ -74,12 +74,16 @@ button {
   text-align: center;
   color: blue;
   cursor:pointer;
+  font-size:2.5em;
+  font-weight:bold;
 }
-.region-us{
+.region-eu{
   width: 45%;
   text-align: center;
   color: green;
   cursor:pointer;
+  font-size:2.5em;
+  font-weight:bold;
 }
 .pipe {
   width: 10%;
