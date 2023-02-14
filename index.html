@@ -91,7 +91,12 @@
       </section>
     </main>
 <script>
+const subscribeButton = document.getElementById("subscribe-button");
+  const emailBox = document.getElementById("email-box");
 
+  subscribeButton.addEventListener("click", function() {
+    emailBox.style.display = "block";
+  });
 </script>
   </body>
 </html>
