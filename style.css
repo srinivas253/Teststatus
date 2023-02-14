@@ -72,13 +72,13 @@ button {
 .region-us{
   width: 45%;
   text-align: center;
-  color: purple;
+  color: blue;
   cursor:pointer;
 }
 .region-us{
   width: 45%;
   text-align: center;
-  color: indigo;
+  color: green;
   cursor:pointer;
 }
 .pipe {
@@ -86,3 +86,37 @@ button {
   text-align: center;
   margin: 0 1em;
 }
+#subscribe-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  #email-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+  }
+
+  #email-input {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  #submit-email {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
