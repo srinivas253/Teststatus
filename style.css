@@ -74,7 +74,7 @@ button {
   text-align: center;
   color: blue;
   cursor:pointer;
-  font-size:2.5em;
+  font-size:1em;
   font-weight:bold;
 }
 .region-eu{
@@ -82,7 +82,7 @@ button {
   text-align: center;
   color: green;
   cursor:pointer;
-  font-size:2.5em;
+  font-size:1em;
   font-weight:bold;
 }
 .pipe {
@@ -107,6 +107,7 @@ button {
     border-radius: 5px;
     margin-top: 20px;
     display: none;
+    float: right;
     width: 300px;
   }
 
