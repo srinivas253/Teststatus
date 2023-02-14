@@ -94,12 +94,12 @@ button {
 #subscribe-button {
     background-color: #4CAF50;
     color: white;
-    padding: 15px 32px;
+    padding: 12px 15px;
     font-size: 12px;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
-    margin-top:-30px;
+    margin-top:-40px;
     float:right;
   }
 
@@ -108,11 +108,11 @@ button {
     position: absolute;
     z-index: 1;
     right: 10px;
-    top: 150px;
+    top: 140px;
     
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
-    broder: 1px;
+    
   }
 
   #email-box {
@@ -120,23 +120,24 @@ button {
     padding: 20px;
     border-radius: 5px;
     margin: 0 auto;
-    width: 200px;
+    width: 300px;
+    broder: 0.5px solid black;
   }
 
   #email-input {
     padding: 12px 20px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
     border: none;
     margin-bottom: 20px;
-    width: 100%;
+    width: 80%;
   }
 
   #submit-email {
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
-    font-size: 16px;
+    padding: 12px 12px;
+    font-size: 12px;
     border-radius: 5px;
     cursor: pointer;
   }
