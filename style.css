@@ -93,12 +93,12 @@ button {
 #subscribe-button {
     background-color: #4CAF50;
     color: white;
-    padding: 15px 32px;
+    
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     float: right;
-    margin-top: 20px;
+    
   }
 
   #email-box {
