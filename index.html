@@ -125,10 +125,10 @@ const euRegion = document.getElementById("region-eu");
     .then(response => response.json())
     .then(data => {
     if(data.status === 200){
-      statusUsersite.textcontext = data.status;
+      statusUsersite.textContext = data.status;
       statusUsersite.className = 'status-ok';
     }else{
-      statusUsersite.textcontext = "Outage";
+      statusUsersite.textContext = "Outage";
       statusUsersite.className = 'status-error';
     }
     });
