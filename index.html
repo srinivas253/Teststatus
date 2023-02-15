@@ -42,7 +42,7 @@
           <tbody id="status-table">
             <tr>
               <td>UserSite</td>
-              <td id="status-usersite" class="status-ok">Operational</td>
+              <td id="status-usersite" class="status-outage">Operational</td>
             </tr>
             <tr>
               <td>DAST</td>
@@ -125,6 +125,7 @@ const euRegion = document.getElementById("region-eu");
     .then(response => response.json())
     .then(data => {
     if(data.status === 200){
+        console.log('testing status')
       statusUsersite.textContext = data.status;
       statusUsersite.className = 'status-ok';
     }else{
