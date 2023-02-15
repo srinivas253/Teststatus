@@ -42,7 +42,7 @@
           <tbody id="status-table">
             <tr>
               <td>UserSite</td>
-              <td class="status-ok">Operational</td>
+              <td id="status-usersite class="status-ok">Operational</td>
             </tr>
             <tr>
               <td>DAST</td>
@@ -118,6 +118,20 @@ const euRegion = document.getElementById("region-eu");
   closeModal.addEventListener("click", function() {
     emailBox.style.display = "none";
   });
+  const statusUsersite = document.getElementById('status-usersite');
+
+
+  fetch(`https://staging.appscan.com/api/V2/Account/GlobalHiddenFeaturesToDisplay`)
+    .then(response => response.json())
+    .then(data => {
+    if(data.status === 200){
+      statusUsersite.textcontext = data.status;
+      statusUsersite.className = 'status-ok';
+    }else{
+      statusUsersite.textcontext = "Outage";
+      statusUsersite.className = 'status-error';
+    }
+    });
 </script>
   </body>
 </html>
