@@ -60,6 +60,9 @@ th {
 .incident-ongoing {
   color: red;
 }
+.fa fa-envelope{
+  padding-right:1px;
+}
 button {
   display: flex;
   justify-content: center;
