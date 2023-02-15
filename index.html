@@ -14,11 +14,11 @@
     <main>
       
       <button>
-  <div class="region-us">US</div>
+  <div id="region-us" class="region-us">US</div>
   <div class="pipe">|</div>
-  <div class="region-eu">EU</div>
+  <div id="region-eu" class="region-eu">EU</div>
 </button>
-     
+      <lable id="id-time">Last update 2mins ago</label>
     
         <button id="subscribe-button">
   <i class="fa fa-envelope"></i> Subscribe
@@ -29,6 +29,7 @@
   <input type="email" id="email-input" placeholder="Enter your email address">
   <button id="submit-email">Subscribe Via Mail</button>
   </div></div>
+      <div id="custom-message"></div>
       <section id="system-status">
         <h2>System Status</h2>
         <table>
@@ -97,7 +98,16 @@ const subscribeButton = document.getElementById("subscribe-button");
   const emailBox = document.getElementById("email-modal");
   const submitEmail = document.getElementById("submit-email");
   const closeModal = document.getElementById("btnClose1");
+  const usRegion = document.getElementById("region-us");
+const euRegion = document.getElementById("region-eu");
+  const customMessage = document.getElementById("custom-message");
 
+  usRegion.addEventListener("click", function() {
+    customMessage.innerHTML = "<h3> US region sync data <h3>";
+  });
+  euRegion.addEventListener("click", function() {
+    customMessage.innerHTML = "<h3> EU region sync data <h3>";
+  });
   subscribeButton.addEventListener("click", function() {
     emailBox.style.display = "block";
   });
