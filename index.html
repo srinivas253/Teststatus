@@ -24,8 +24,8 @@
   <i class="fa fa-envelope"></i> Subscribe
 </button>
 <div id="email-modal" style="display: none;">
-<div id="email-box" >
   <input id="btnClose1" type="button" Value="X">
+<div id="email-box" >
   <input type="email" id="email-input" placeholder="Enter your email address">
   <button id="submit-email">Subscribe Via Mail</button>
   </div></div>
@@ -96,12 +96,16 @@
 const subscribeButton = document.getElementById("subscribe-button");
   const emailBox = document.getElementById("email-modal");
   const submitEmail = document.getElementById("submit-email");
+  const closeModal = document.getElementById("btnClose1");
 
   subscribeButton.addEventListener("click", function() {
     emailBox.style.display = "block";
   });
 
   submitEmail.addEventListener("click", function() {
+    emailBox.style.display = "none";
+  });
+  closeModal.addEventListener("click", function() {
     emailBox.style.display = "none";
   });
 </script>
