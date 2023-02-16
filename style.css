@@ -126,15 +126,16 @@ button {
   }
   #outage-modal {
        width: 300px;
-       height: 100px;
+       height: 300px;
        margin:0 auto;
        display:none;
        position: absolute;
+       z-index: 1;
        left: 0;
        right:0;
        top: 50%; 
        border:1px solid;
-       background-color: rgba(0,0,0,0.4);
+       background-color: #fefefe;
        overflow:auto;
     }
   #email-box {
