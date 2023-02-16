@@ -125,7 +125,7 @@ button {
     
   }
   #outage-modal {
-       width: 100px;
+       width: 300px;
        height: 100px;
        margin:0 auto;
        display:table;
@@ -134,11 +134,7 @@ button {
        right:0;
        top: 50%; 
        border:1px solid;
-       -webkit-transform:translateY(-50%);
-       -moz-transform:translateY(-50%);
-       -ms-transform:translateY(-50%);
-       -o-transform:translateY(-50%);
-       transform:translateY(-50%);
+       background-color: rgba(0,0,0,0.4);
     }
   #email-box {
     background-color: #f2f2f2;
