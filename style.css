@@ -124,7 +124,22 @@ button {
     background-color: rgba(0,0,0,0.4);
     
   }
-
+  #ouatge-modal {
+       width: 100px;
+       height: 100px;
+       margin:0 auto;
+       display:table;
+       position: absolute;
+       left: 0;
+       right:0;
+       top: 50%; 
+       border:1px solid;
+       -webkit-transform:translateY(-50%);
+       -moz-transform:translateY(-50%);
+       -ms-transform:translateY(-50%);
+       -o-transform:translateY(-50%);
+       transform:translateY(-50%);
+    }
   #email-box {
     background-color: #f2f2f2;
     padding: 20px;
