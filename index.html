@@ -29,6 +29,11 @@
   <input type="email" id="email-input" placeholder="Enter your email address">
   <button id="submit-email">Subscribe Via Mail</button>
   </div></div>
+      <div id=outage-modal styel="display:none;">
+        <input id="btnClose2" type="button" Value="X">
+        <p><h4>Investigating</h4>-When your product or service isn’t functioning as expected, let your customers know by creating an incident. 
+                Communicate early, even if you don’t know exactly what’s going on.<br><span ">Feb 6, 13:04 UTC</span></p>
+      </div>
       <div id="custom-message"><h3> US region sync data <h3></div>
       <section id="system-status">
         <h2>System Status</h2>
@@ -46,7 +51,7 @@
             </tr>
             <tr>
               <td>DAST</td>
-              <td class="status-error"><a href="#" class="status-error"> Outage</td></a>
+              <td class="status-error"><a href="#" class="status-error" id="outage-id"> Outage</td></a>
             </tr>
             <tr>
               <td>SAST</td>
@@ -119,8 +124,16 @@ const euRegion = document.getElementById("region-eu");
     emailBox.style.display = "none";
   });
   const statusUsersite = document.getElementById('status-usersite');
-
-
+  const outageModal = document.getElementById('outage-modal');
+  const outageId = document.getElementById('outage-id');
+  const closebutton2 = document.getElementById('btnClose2');
+  
+  ouatgeId.addEventListener("click", function() {
+    outageModal.style.display = "block";
+  });
+  closebutton2.addEventListener("click", function() {
+    outageModal.style.display = "none";
+  });
   fetch(`https://staging.appscan.com/api/V2/Account/GlobalHiddenFeaturesToDisplay`)
     .then(response => response.json())
     .then(data => {
