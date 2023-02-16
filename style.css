@@ -128,13 +128,14 @@ button {
        width: 300px;
        height: 100px;
        margin:0 auto;
-       display:table;
+       display:none;
        position: absolute;
        left: 0;
        right:0;
        top: 50%; 
        border:1px solid;
        background-color: rgba(0,0,0,0.4);
+       overflow:auto;
     }
   #email-box {
     background-color: #f2f2f2;
