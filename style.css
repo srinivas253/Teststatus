@@ -70,10 +70,7 @@ th {
   margin-left : 2px;
   float:right;
 }
-#btnClose2{
-  margin-left : 2px;
-  float:right;
-}
+
 button {
   display: flex;
   justify-content: center;
